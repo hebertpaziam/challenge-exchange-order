@@ -1,59 +1,106 @@
-# ChallengeExchangeOrder
+
+# Challenge Exchange Order App
+
+This project is a technical challenge developed using **Angular 20**. The main goal is to create an application for managing **foreign currency exchange orders**, allowing users to select different currencies, specify quantities, and complete an order flow with personal data.
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
 
-## Development server
+## 🚀 Getting Started
 
-To start a local development server, run:
+### Prerequisites
 
-```bash
-ng serve
-```
+- Node.js 24
+- Npm 11
+- Angular CLI 20
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Installation
 
 ```bash
-ng generate component component-name
+git clone https://github.com/your-username/foreign-currency-order-app.git
+
+cd foreign-currency-order-app
+
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Running the App
 
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
+The application will be available at `http://localhost:4200`.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🧾 Project Overview
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This application allows a user to:
 
-## Running unit tests
+1. Start a new currency exchange order.
+2. Choose quantities of various denominations for different currencies.
+3. Enter personal information.
+4. Review the order.
+5. Finalize the process.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Functional Requirements
 
-```bash
-ng test
-```
+#### RF1 – Home Screen
 
-## Running end-to-end tests
+- Displays the title **"Casa de câmbio"**
+- Contains an image (retrieved from the internet)
+- Has a button **"Iniciar Pedido"** which navigates to the order creation/editing screen
 
-For end-to-end (e2e) testing, run:
+#### RF2 – Order Creation/Editing
 
-```bash
-ng e2e
-```
+- Allows users to toggle between different currencies and update the number of notes per denomination
+- Total value updates dynamically after quantity changes
+- Order must have a minimum value of **R$ 100,00**
+- Requires user data: **Name, CPF, Email, Phone Number**
+- Currency and denomination data fetched from:
+  - **URL**: `https://qugkx0grkb.execute-api.sa-east-1.amazonaws.com/api/moedas`
+  - **Method**: `GET`
+  - **Header**: `x-api-key: cmobRsEsmKaH8OoGLjRPg3zPGtlpqZvdR4Vsf3j5`
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+#### RF3 – Order Review
 
-## Additional Resources
+- Displays a single read-only table grouped by currency and denomination
+  - Only shows denominations with quantity ≥ 1
+- Shows entered personal information
+- Includes:
+  - **Voltar** button to return to the order screen (preserves data)
+  - **Finalizar Pedido** button to show a success message and redirect to the home screen
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+### 🛠 Technical Requirements
+
+- **Angular 20**
+- Uses a UI component library (e.g., Angular Material)
+- API calls include `x-api-key` header
+- HTTP loading indicators
+- Error handling and API resilience (due to potential instability)
+- Unit tests implemented
+
+---
+
+### 📦 Features
+
+- Reactive forms for robust form management
+- Modular architecture with reusable components
+- Responsive layout
+- API integration with proper error handling and UX feedback
+- Unit tested with Jasmine and Karma (or Jest, if configured)
+
+---
+
+### 🌐 Deployment
+
+> ⚠️ Deployment is optional, but hosting the app (e.g., AWS S3, Azure, Heroku) is a bonus.
+
+---
+
+### 📎 Notes
+
+- The UI does not need to strictly follow any wireframes; improvements are allowed as long as the core flow and features are preserved.
+- The project was built with clean code principles, aiming for readability, scalability, and performance.
