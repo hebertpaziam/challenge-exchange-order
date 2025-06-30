@@ -46,12 +46,14 @@ This application allows a user to:
 ### Functional Requirements
 
 #### RF1 – Home Screen
+![image](https://github.com/user-attachments/assets/0132ec1a-35f9-4ed5-82d5-77f8fcc78130)
 
 - Displays the title **"Casa de câmbio"**
 - Contains an image (retrieved from the internet)
 - Has a button **"Iniciar Pedido"** which navigates to the order creation/editing screen
 
 #### RF2 – Order Creation/Editing
+![image](https://github.com/user-attachments/assets/9bddb678-ec4a-40ab-a95d-3826dbf0cf2c)
 
 - Allows users to toggle between different currencies and update the number of notes per denomination
 - Total value updates dynamically after quantity changes
@@ -63,6 +65,7 @@ This application allows a user to:
   - **Header**: `x-api-key: cmobRsEsmKaH8OoGLjRPg3zPGtlpqZvdR4Vsf3j5`
 
 #### RF3 – Order Review
+![image](https://github.com/user-attachments/assets/955810ef-8f36-4ab4-8c8d-4eb553cd67a9)
 
 - Displays a single read-only table grouped by currency and denomination
   - Only shows denominations with quantity ≥ 1
