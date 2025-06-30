@@ -1,0 +1,12 @@
+{
+  "preset": "jest-preset-angular",
+  "setupFilesAfterEnv": ["<rootDir>/src/setup-tests.ts"],
+  "transformIgnorePatterns": ["node_modules/(?!.*\\.mjs$)"],
+  "moduleNameMapper": {
+    "^src/(.*)$": "<rootDir>/src/$1",
+    "^@app/(.*)$": ["<rootDir>/src/app/$1"],
+    "^@environment$": ["<rootDir>/src/environments/environment.ts"],
+    "^lodash-es$": "lodash",
+    "^lodash-es/(.*)$": "lodash/$1"
+  }
+}
