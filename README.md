@@ -5,6 +5,12 @@ This project is a technical challenge developed using **Angular 20**. The main g
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
 
+[![License](https://img.shields.io/github/license/hebertpaziam/challenge-exchange-order)](https://github.com/hebertpaziam/challenge-exchange-order/blob/main/LICENSE)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=size)](https://github.com/hebertpaziam/challenge-exchange-order)
+[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/hebertpaziam/challenge-exchange-order)](https://github.com/hebertpaziam/challenge-exchange-order)
+[![Coverage Status](https://coveralls.io/repos/github/hebertpaziam/challenge-exchange-order/badge.svg?branch=main)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
