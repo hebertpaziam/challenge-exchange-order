@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "types": ["node"],
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -17,18 +18,11 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ],
+    "lib": ["ES2022", "dom"],
     "baseUrl": "./src",
     "paths": {
-      "@app/*": [
-        "app/*"
-      ],
-      "@environment": [
-        "environments/environment.ts"
-      ]
+      "@app/*": ["app/*"],
+      "@environment": ["environments/environment.ts"]
     }
   },
   "angularCompilerOptions": {
