@@ -13,7 +13,7 @@
     "test": "jest",
     "test:commit": "jest --runInBand --onlyChanged",
     "test:watch": "jest --watch",
-    "test:ci": "jest ---runInBand --ci",
+    "test:ci": "jest ---runInBand --ci --coverage",
     "lint": "ng lint",
     "prepare": "husky"
   },
