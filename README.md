@@ -3,21 +3,22 @@
 
 **A technical challenge app for managing foreign currency orders, built with Angular.**
 
-## 📦 Project
+---
 
 [![License](https://img.shields.io/github/license/hebertpaziam/challenge-exchange-order?logo=open-source-initiative&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/blob/main/LICENSE)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen?logo=git&logoColor=white)](http://commitizen.github.io/cz-cli/)
 ![Last commit](https://img.shields.io/github/last-commit/hebertpaziam/challenge-exchange-order?logo=git&logoColor=white)
 [![Angular](https://img.shields.io/badge/made%20with-Angular-DD0031?logo=angular&logoColor=white)](https://v20.angular.dev/)
 
-### 📊 Quality & Security
+---
+
 [![Pipeline](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml/badge.svg?logo=eslint&logoColor=white&label=pipeline)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql/badge.svg?logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?logo=dependabot&logoColor=white)
 [![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=Code%20Size&logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order)
 [![Coverage Status](https://img.shields.io/coveralls/github/hebertpaziam/challenge-exchange-order/main?logo=coveralls&logoColor=white)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
 
-
+---
 
 ## 🚀 Getting Started
 
