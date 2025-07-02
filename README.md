@@ -20,7 +20,7 @@
 
 ### ✅ Automation & Lint
 
-[![ESLint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg?logo=eslint&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml)
+[![ESLint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml/badge.svg?logo=eslint&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?logo=dependabot&logoColor=white)
 
 ## 🚀 Getting Started
