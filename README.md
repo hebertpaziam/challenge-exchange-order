@@ -11,17 +11,13 @@
 [![Angular](https://img.shields.io/badge/made%20with-Angular-DD0031?logo=angular&logoColor=white)](https://v20.angular.dev/)
 
 ### 📊 Quality & Security
-
-[![Coverage Status](https://img.shields.io/coveralls/github/hebertpaziam/challenge-exchange-order/main?logo=coveralls&logoColor=white)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
-[![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=Code%20Size&logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order)
+[![Pipeline](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml/badge.svg?logo=eslint&logoColor=white&label=pipeline)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql/badge.svg?logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql)
-
----
-
-### ✅ Automation & Lint
-
-[![ESLint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml/badge.svg?logo=eslint&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/ci.yml)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?logo=dependabot&logoColor=white)
+[![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=Code%20Size&logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order)
+[![Coverage Status](https://img.shields.io/coveralls/github/hebertpaziam/challenge-exchange-order/main?logo=coveralls&logoColor=white)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
+
+
 
 ## 🚀 Getting Started
 
