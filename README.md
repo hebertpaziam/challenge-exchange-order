@@ -6,14 +6,14 @@ This project is a technical challenge developed using **Angular 20**. The main g
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
 [![License](https://img.shields.io/github/license/hebertpaziam/challenge-exchange-order?logo=MIT)](https://github.com/hebertpaziam/challenge-exchange-order/blob/main/LICENSE)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?logo=dependabot)
 
 [![Angular](https://img.shields.io/badge/made%20with-Angular-DD0031?logo=angular)](https://v20.angular.dev/)
 [![Coverage Status](https://coveralls.io/repos/github/hebertpaziam/challenge-exchange-order/badge.svg?branch=main)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
 [![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=size)](https://github.com/hebertpaziam/challenge-exchange-order)
 
-[![Lint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg)](https://eslint.org/)
+[![ESLint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml)
 [![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql)
-[![Vulnerabilities](https://img.shields.io/github/vulnerabilities/hebertpaziam/challenge-exchange-order?label=Security%20Vulnerabilities&color=orange)](https://github.com/hebertpaziam/challenge-exchange-order)
 
 
 ## 🚀 Getting Started
