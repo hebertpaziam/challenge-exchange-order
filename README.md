@@ -1,20 +1,27 @@
 
-# Challenge Exchange Order App
+# 💱 Challenge Exchange Order
 
-This project is a technical challenge developed using **Angular 20**. The main goal is to create an application for managing **foreign currency exchange orders**, allowing users to select different currencies, specify quantities, and complete an order flow with personal data.
+**A technical challenge app for managing foreign currency orders, built with Angular.**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
-[![License](https://img.shields.io/github/license/hebertpaziam/challenge-exchange-order?logo=MIT)](https://github.com/hebertpaziam/challenge-exchange-order/blob/main/LICENSE)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?logo=dependabot)
+## 📦 Project
 
-[![Angular](https://img.shields.io/badge/made%20with-Angular-DD0031?logo=angular)](https://v20.angular.dev/)
-[![Coverage Status](https://coveralls.io/repos/github/hebertpaziam/challenge-exchange-order/badge.svg?branch=main)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
-[![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=size)](https://github.com/hebertpaziam/challenge-exchange-order)
+[![License](https://img.shields.io/github/license/hebertpaziam/challenge-exchange-order?logo=open-source-initiative&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/blob/main/LICENSE)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen?logo=git&logoColor=white)](http://commitizen.github.io/cz-cli/)
+![Last commit](https://img.shields.io/github/last-commit/hebertpaziam/challenge-exchange-order?logo=git&logoColor=white)
+[![Angular](https://img.shields.io/badge/made%20with-Angular-DD0031?logo=angular&logoColor=white)](https://v20.angular.dev/)
 
-[![ESLint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml)
-[![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql)
+### 📊 Quality & Security
 
+[![Coverage Status](https://img.shields.io/coveralls/github/hebertpaziam/challenge-exchange-order/main?logo=coveralls&logoColor=white)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
+[![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=Code%20Size&logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order)
+[![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql/badge.svg?logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql)
+
+---
+
+### ✅ Automation & Lint
+
+[![ESLint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg?logo=eslint&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?logo=dependabot&logoColor=white)
 
 ## 🚀 Getting Started
 
