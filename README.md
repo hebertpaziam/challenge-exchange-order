@@ -10,9 +10,9 @@
 
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen?logo=dependabot&logoColor=white)
 [![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=Code%20Size&logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order)
-[![Eslint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg?logo=eslint&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml)
-[![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/codeql.yml/badge.svg?logo=github&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/codeql.yml)
-[![Test](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/test.yml/badge.svg?logo=jest&logoColor=white)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/test.yml)
+[![ESLint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml)
+[![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/codeql.yml/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/codeql.yml)
+[![Test](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/test.yml/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/test.yml)
 [![Coverage Status](https://img.shields.io/coveralls/github/hebertpaziam/challenge-exchange-order/main?logo=coveralls&logoColor=white)](https://coveralls.io/github/hebertpaziam/challenge-exchange-order?branch=main)
 
 ---
