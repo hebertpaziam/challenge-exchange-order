@@ -48,6 +48,9 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "define": {
+              "process.env.X_API_KEY": "process.env.X_API_KEY"
+            },
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",

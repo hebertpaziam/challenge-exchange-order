@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build --configuration production",
     "test": "jest",
     "lint": "ng lint"
   },
@@ -33,6 +33,7 @@
     "@angular/compiler-cli": "^20.0.0",
     "@faker-js/faker": "^9.8.0",
     "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.8",
     "angular-eslint": "20.1.1",
     "eslint": "^9.29.0",
     "husky": "^9.1.7",
