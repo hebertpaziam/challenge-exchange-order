@@ -32,6 +32,7 @@
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
     "@faker-js/faker": "^9.8.0",
+    "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.0.8",
     "angular-eslint": "20.1.1",
