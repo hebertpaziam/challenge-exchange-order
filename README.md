@@ -12,7 +12,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 [![Code Size](https://img.shields.io/github/languages/code-size/hebertpaziam/challenge-exchange-order?label=size)](https://github.com/hebertpaziam/challenge-exchange-order)
 
 [![Lint](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/eslint.yml/badge.svg)](https://eslint.org/)
-[![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/codeql.yml/badge.svg)](https://codeql.github.com/)
+[![CodeQL](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/hebertpaziam/challenge-exchange-order/actions/workflows/github-code-scanning/codeql)
 [![Vulnerabilities](https://img.shields.io/github/vulnerabilities/hebertpaziam/challenge-exchange-order?label=Security%20Vulnerabilities&color=orange)](https://github.com/hebertpaziam/challenge-exchange-order)
 
 
