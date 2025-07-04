@@ -2,12 +2,13 @@ import { Routes } from '@angular/router';
 import { environment } from '@environment';
 
 import { orderFlowGuard } from './guards/order-flow.guard';
+import { HomeComponent } from './views/home/home.component';
 
 export const routes: Routes = [
   {
     path: 'home',
     title: () => `${environment.TITLE_PREFIX} | Home`,
-    loadComponent: () => import('./views/home/home.component').then((c) => c.HomeComponent),
+    component: HomeComponent,
   },
   {
     path: 'order',
