@@ -1,5 +1,7 @@
 @use 'sass:meta';
 
+@use 'toolbox' as toolbox;
+
 *,
 *:after,
 *:before {
@@ -8,4 +10,12 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  @each $category, $weights in toolbox.$colors {
+    @each $weight, $color in $weights {
+      --color-#{$category}-#{$weight}: #{$color};
+    }
+  }
 }

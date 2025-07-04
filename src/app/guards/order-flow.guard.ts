@@ -9,7 +9,7 @@ export const orderFlowGuard: CanMatchFn = (route, segments) => {
 
   const bankNotes = checkoutService.allBankNotes();
 
-  if (['order', 'review'].includes(segments[0]?.path) && !bankNotes.length) {
+  if (['order', 'review'].includes(segments[0]?.path) && !bankNotes) {
     router.navigate(['/home']);
     return false;
   }

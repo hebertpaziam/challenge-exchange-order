@@ -1,1 +1,8 @@
-<p>home works! {{ X_API_KEY }}</p>
+<mat-card class="home-page">
+  <h1 class="home-page__title">Casa de Câmbio</h1>
+  <img
+    src="/assets/images/home-illustration.png"
+    class="home-page__illustration"
+    alt="Imagem ilustrativa da tela inicial" />
+  <button matButton="elevated" [routerLink]="['/order']">Iniciar Pedido</button>
+</mat-card>

@@ -1,13 +1,21 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { environment } from '@environment';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { RouterModule } from '@angular/router';
+
+import { CheckoutService } from '@app/services/checkout.service';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [MatCardModule, MatButtonModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {
-  X_API_KEY = environment.X_API_KEY;
+export class HomeComponent implements OnInit {
+  checkoutService = inject(CheckoutService);
+
+  ngOnInit(): void {
+    this.checkoutService.setBankNotes([]);
+  }
 }

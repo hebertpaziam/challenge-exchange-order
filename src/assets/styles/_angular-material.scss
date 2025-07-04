@@ -1,17 +1,29 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.dev/guide/theming
+@use 'sass:map';
 @use '@angular/material' as mat;
+@use './1-settings' as settings;
+
+$_rest: (
+  secondary: map.get(settings.$colors, secondary),
+  neutral: map.get(settings.$colors, neutral),
+  neutral-variant: map.get(settings.$colors, neutral-variant),
+  error: map.get(settings.$colors, error),
+);
+
+$primary-palette: map.merge(map.get(settings.$colors, primary), $_rest);
+$tertiary-palette: map.merge(map.get(settings.$colors, secondary), $_rest);
+
+$theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: $primary-palette,
+      tertiary: $tertiary-palette,
+    ),
+  )
+);
 
 html {
-  @include mat.theme(
-    (
-      color: (
-        theme-type: light,
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
-      ),
-      typography: Roboto,
-      density: 0,
-    )
-  );
+  @include mat.elevation-classes();
+  @include mat.app-background();
+  @include mat.all-component-themes($theme);
 }
