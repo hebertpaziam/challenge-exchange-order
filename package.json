@@ -1,10 +1,6 @@
 {
   "name": "challenge-exchange-order",
   "version": "1.0.0",
-  "engines": {
-    "node": "24.1.0",
-    "npm": "11.3.0"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
