@@ -188,3 +188,9 @@ $colors: (
   padding: 1rem;
   background-color: var(--color-neutral-100);
 }
+
+%title-layout {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}

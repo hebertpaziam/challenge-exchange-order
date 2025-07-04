@@ -1,0 +1,68 @@
+@use 'toolbox' as *;
+
+:host {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+
+  background-color: var(--color-neutral-100);
+  overflow-x: auto;
+  border: 1px solid var(--color-neutral-90);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  ::ng-deep {
+    thead {
+      background-color: var(--color-primary-98);
+
+      th {
+        padding: 1.3rem 1rem;
+        font-weight: 500;
+        color: var(--color-primary-10);
+        border-bottom: 2px solid var(--color-primary-90);
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: var(--color-neutral-99);
+        }
+
+        &:hover {
+          background-color: var(--color-primary-95);
+        }
+      }
+
+      td {
+        padding: 1rem 1rem;
+        color: var(--color-neutral-30);
+        border-bottom: 1px solid var(--color-neutral-90);
+
+        &.empty {
+          text-align: center;
+          color: var(--color-neutral-50);
+        }
+
+        &.right {
+          text-align: right;
+        }
+      }
+    }
+
+    tfoot {
+      background-color: var(--color-neutral-98);
+
+      td {
+        padding: 1.25rem 1rem;
+        font-weight: 500;
+        color: var(--color-neutral-20);
+        border-top: 2px solid var(--color-neutral-90);
+      }
+    }
+  }
+}

@@ -1,1 +1,33 @@
-<p>order works!</p>
+<mat-card class="order-page">
+  <h1 class="order-page__title">Pedido</h1>
+
+  <div class="order-page__content">
+    <app-tabs [tabs]="tabs()" (changeTab)="setActivatedTab($event)"></app-tabs>
+
+    <app-table>
+      <thead>
+        <tr>
+          <th colspan="4">Cotação {{ tabActivated().label }}</th>
+        </tr>
+        <tr>
+          <th>Cédula/Face</th>
+          <th>Quantidade</th>
+          <th>Total {{ this.selectedCurrency() | currencySymbol }}</th>
+          <th>Total R$</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of exchangeItems()!.controls; track item) {
+          <tr [formGroup]="item">
+            <td>{{ item.value.face }}</td>
+            <td>
+              <input type="number" inputmode="numeric" class="order-page__quantity-field" formControlName="quantity" />
+            </td>
+            <td>{{ item.value.face * item.value.quantity | currency: selectedCurrency() : 'symbol-narrow' }}</td>
+            <td>{{ item.value.quantity * quotation() | currency: 'BRL' }}</td>
+          </tr>
+        }
+      </tbody>
+    </app-table>
+  </div>
+</mat-card>

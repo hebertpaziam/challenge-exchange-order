@@ -13,11 +13,11 @@ export class CheckoutService {
     JSONStorage.getItem<IBanknote[]>(`${environment.STORAGE_KEY}@bank-notes`) || null
   );
 
-  private quoteMap: Record<BankNoteTypeEnum, number> = {
+  quoteMap = signal<Record<BankNoteTypeEnum, number>>({
     [BankNoteTypeEnum.DOLLAR]: 5.41,
     [BankNoteTypeEnum.EURO]: 6.37,
     [BankNoteTypeEnum.POUND_STERLING]: 7.38,
-  };
+  }).asReadonly();
 
   allBankNotes = computed(() => this.bankNotes());
 

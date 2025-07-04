@@ -8,8 +8,7 @@
   @extend %page-wrapper-layout;
 
   &__title {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
+    @extend %title-layout;
   }
 
   &__illustration {

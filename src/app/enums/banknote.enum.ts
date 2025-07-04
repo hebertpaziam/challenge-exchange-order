@@ -1,5 +1,5 @@
 export enum BankNoteTypeEnum {
-  DOLLAR,
-  EURO,
-  POUND_STERLING,
+  DOLLAR = 'USD',
+  EURO = 'EUR',
+  POUND_STERLING = 'GBP',
 }
