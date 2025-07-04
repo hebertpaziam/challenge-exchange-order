@@ -170,3 +170,21 @@ $colors: (
     100: #ffffff,
   ),
 );
+
+%page-host-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--color-secondary-95);
+}
+
+%page-wrapper-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--color-neutral-100);
+}

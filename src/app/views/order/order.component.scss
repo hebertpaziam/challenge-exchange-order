@@ -1,0 +1,19 @@
+@use 'toolbox' as *;
+
+:host {
+  @extend %page-host-layout;
+}
+
+.order-page {
+  @extend %page-wrapper-layout;
+
+  &__title {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+
+  &__illustration {
+    width: 300px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,9 @@
+@use 'toolbox' as *;
+
+:host {
+  @extend %page-host-layout;
+}
+
+.review-page {
+  @extend %page-wrapper-layout;
+}

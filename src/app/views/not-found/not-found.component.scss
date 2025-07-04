@@ -4,16 +4,12 @@
   @extend %page-host-layout;
 }
 
-.home-page {
+.not-found-page {
   @extend %page-wrapper-layout;
-
-  &__title {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-  }
+  border-radius: 16px;
 
   &__illustration {
     width: 300px;
-    border-radius: 8px;
+    border-radius: inherit;
   }
 }
