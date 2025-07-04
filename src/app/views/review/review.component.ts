@@ -30,6 +30,7 @@ export class ReviewComponent {
         .filter((item) => item.quantity > 0)
         .map((item) => ({
           currencyCode,
+          currencyName: item.currencyName,
           face: item.face,
           quantity: item.quantity,
           total: item.face * item.quantity,

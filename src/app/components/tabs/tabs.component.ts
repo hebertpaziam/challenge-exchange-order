@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class TabsComponent implements AfterViewInit {
   readonly tabs = input<{ label: string; value: any }[]>([]);
-  readonly tabActivated = signal(this.tabs()?.[0]);
+  readonly tabActivated = signal<any | undefined>(this.tabs()?.[0]);
 
   readonly changeTab = output();
 

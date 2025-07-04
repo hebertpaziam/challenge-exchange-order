@@ -17,7 +17,7 @@
     <tbody>
       @for (item of orderItems(); track item) {
         <tr>
-          <td>{{ item.currencyCode }}</td>
+          <td>{{ item.currencyName }}</td>
           <td>{{ item.face }}</td>
           <td>{{ item.quantity }}</td>
           <td>{{ item.total | currency: item.currencyCode }}</td>

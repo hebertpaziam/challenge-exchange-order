@@ -118,6 +118,7 @@ export class OrderComponent implements OnInit {
                 item.faces.map((face) =>
                   this.fb.group({
                     face: [face],
+                    currencyName: [item.name],
                     quotation: [item.quotation],
                     quantity: [0],
                   })
