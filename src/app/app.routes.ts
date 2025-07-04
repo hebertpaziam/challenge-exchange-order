@@ -23,13 +23,13 @@ export const routes: Routes = [
     loadComponent: () => import('./views/review/review.component').then((c) => c.ReviewComponent),
   },
   {
-    path: '**',
-    title: () => `${environment.TITLE_PREFIX} | Not Found`,
-    loadComponent: () => import('./views/not-found/not-found.component').then((c) => c.NotFoundComponent),
-  },
-  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
+  },
+  {
+    path: '**',
+    title: () => `${environment.TITLE_PREFIX} | Not Found`,
+    loadComponent: () => import('./views/not-found/not-found.component').then((c) => c.NotFoundComponent),
   },
 ];
