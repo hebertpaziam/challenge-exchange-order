@@ -55,13 +55,17 @@ table {
     }
 
     tfoot {
-      background-color: var(--color-neutral-98);
+      background-color: var(--color-primary-98);
 
       td {
         padding: 1.25rem 1rem;
         font-weight: 500;
         color: var(--color-neutral-20);
         border-top: 2px solid var(--color-neutral-90);
+
+        &.right {
+          text-align: right;
+        }
       }
     }
   }

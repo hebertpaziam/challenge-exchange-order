@@ -1,1 +1,61 @@
-<p>review works!</p>
+<mat-card class="review-page">
+  <app-table>
+    <thead>
+      <tr>
+        <th colspan="5">
+          <h1 class="review-page__title">Revisão do pedido</h1>
+        </th>
+      </tr>
+      <tr>
+        <th>Moeda</th>
+        <th>Cédula/Face</th>
+        <th>Quantidade</th>
+        <th>Total</th>
+        <th>Total R$</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of orderItems(); track item) {
+        <tr>
+          <td>{{ item.currencyCode }}</td>
+          <td>{{ item.face }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.total | currency: item.currencyCode }}</td>
+          <td>{{ item.totalBRL | currency: 'BRL' }}</td>
+        </tr>
+      }
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4" class="right">Total</td>
+        <td>{{ orderAmount() | currency: 'BRL' }}</td>
+      </tr>
+    </tfoot>
+  </app-table>
+
+  <h2 class="review-page__title">Dados Pessoais</h2>
+
+  <div class="review-page__info">
+    <p class="review-page__item">
+      Nome
+      <strong>{{ order()?.name }}</strong>
+    </p>
+    <p class="review-page__item">
+      E-mail
+      <strong>{{ order()?.email }}</strong>
+    </p>
+    <p class="review-page__item">
+      CPF
+      <strong>{{ order()?.governmentId }}</strong>
+    </p>
+    <p class="review-page__item">
+      Celular
+      <strong>{{ order()?.phone }}</strong>
+    </p>
+  </div>
+
+  <div class="review-page__actions">
+    <button type="button" matButton="outlined" [routerLink]="['/order']">Voltar</button>
+    <button type="button" matButton="filled" (click)="submitOrder()">Finalizar Pedido</button>
+  </div>
+</mat-card>

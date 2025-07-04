@@ -1,15 +1,15 @@
 import { inject } from '@angular/core';
 import { CanMatchFn, Router } from '@angular/router';
 
-import { CheckoutService } from '@app/services/checkout.service';
+import { ExchangeService } from '@app/services/exchange/exchange.service';
 
 export const orderFlowGuard: CanMatchFn = (route, segments) => {
   const router = inject(Router);
-  const checkoutService = inject(CheckoutService);
+  const exchangeService = inject(ExchangeService);
 
-  const bankNotes = checkoutService.allBankNotes();
+  const order = exchangeService.order();
 
-  if (['order', 'review'].includes(segments[0]?.path) && !bankNotes) {
+  if (['order', 'review'].includes(segments[0]?.path) && !order) {
     router.navigate(['/home']);
     return false;
   }

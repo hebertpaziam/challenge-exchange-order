@@ -1,12 +1,44 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CurrencyPipe } from '@angular/common';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { Router, RouterModule } from '@angular/router';
+
+import { TableComponent } from '@app/components/table/table.component';
+import { ExchangeService } from '@app/services/exchange/exchange.service';
 
 @Component({
   selector: 'app-review',
-  imports: [],
+  imports: [MatButtonModule, MatCardModule, TableComponent, CurrencyPipe, RouterModule],
   templateUrl: './review.component.html',
   styleUrl: './review.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ReviewComponent {
+  private readonly router = inject(Router);
+  private readonly exchangeService = inject(ExchangeService);
 
+  order = computed(() => this.exchangeService.order());
+
+  orderItems = computed(() =>
+    Object.entries(this.order()!.exchangeItems).flatMap(([currencyCode, items]) =>
+      items
+        .filter((item) => item.quantity > 0)
+        .map((item) => ({
+          currencyCode,
+          face: item.face,
+          quantity: item.quantity,
+          total: item.face * item.quantity,
+          totalBRL: item.face * item.quantity * item.quotation,
+        }))
+    )
+  );
+
+  orderAmount = computed(() => this.orderItems().reduce((total: number, item: any) => item.totalBRL + total, 0));
+
+  submitOrder() {
+    this.router.navigate(['/home']).then(() => {
+      alert('Pedido Finalizado!');
+    });
+  }
 }

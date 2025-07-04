@@ -18,10 +18,33 @@
 
   &__content {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__table {
+    display: flex;
 
     app-table {
       border-top-left-radius: 0;
     }
+  }
+
+  &__actions,
+  &__fields {
+    padding-left: 170px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__field {
+    min-width: 200px;
   }
 
   &__quantity-field {

@@ -1,8 +1,12 @@
 <div class="tabs">
   @for (tab of tabs(); track tab) {
-    @let isActivated = tab === tabActivated();
+    @let isActivated = tabActivated()?.value === tab.value;
 
-    <button [matButton]="isActivated ? 'filled' : 'outlined'" class="tabs__item" (click)="activateTab(tab)">
+    <button
+      type="button"
+      [matButton]="isActivated ? 'filled' : 'outlined'"
+      class="tabs__item"
+      (click)="activateTab(tab)">
       {{ tab.label }}
     </button>
   }

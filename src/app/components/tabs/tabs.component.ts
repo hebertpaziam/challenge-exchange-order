@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input, output, signal } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, input, output, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './tabs.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TabsComponent {
+export class TabsComponent implements AfterViewInit {
   readonly tabs = input<{ label: string; value: any }[]>([]);
   readonly tabActivated = signal(this.tabs()?.[0]);
 
@@ -17,5 +17,9 @@ export class TabsComponent {
   activateTab(tab: any): void {
     this.changeTab.emit(tab);
     this.tabActivated.set(tab);
+  }
+
+  ngAfterViewInit(): void {
+    this.tabActivated.set(this.tabs()?.[0]);
   }
 }
