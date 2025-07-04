@@ -149,47 +149,5 @@ export class OrderComponent implements OnInit {
         })
       )
       .subscribe();
-
-    this.form.patchValue({
-      name: 'Hebert Marcos Paziam',
-      email: 'hebert.paziam@outlook.com',
-      governmentId: '04980056903',
-      phone: '11950699902',
-      exchangeItems: {
-        USD: [
-          { face: 1, quotation: 5.48, quantity: 0 },
-          { face: 2, quotation: 5.48, quantity: 0 },
-          { face: 5, quotation: 5.48, quantity: 0 },
-          { face: 10, quotation: 5.48, quantity: 0 },
-          { face: 20, quotation: 5.48, quantity: 2 },
-          { face: 50, quotation: 5.48, quantity: 1 },
-          { face: 100, quotation: 5.48, quantity: 2 },
-        ],
-        EUR: [
-          { face: 5, quotation: 6.1, quantity: 0 },
-          { face: 10, quotation: 6.1, quantity: 0 },
-          { face: 20, quotation: 6.1, quantity: 0 },
-          { face: 50, quotation: 6.1, quantity: 0 },
-          { face: 100, quotation: 6.1, quantity: 0 },
-          { face: 200, quotation: 6.1, quantity: 0 },
-          { face: 500, quotation: 6.1, quantity: 0 },
-        ],
-        GBP: [
-          { face: 5, quotation: 7.29, quantity: 1 },
-          { face: 10, quotation: 7.29, quantity: 0 },
-          { face: 20, quotation: 7.29, quantity: 1 },
-          { face: 50, quotation: 7.29, quantity: 4 },
-        ],
-        ARS: [
-          { face: 10, quotation: 0.0057, quantity: 0 },
-          { face: 20, quotation: 0.0057, quantity: 0 },
-          { face: 50, quotation: 0.0057, quantity: 0 },
-          { face: 100, quotation: 0.0057, quantity: 0 },
-          { face: 200, quotation: 0.0057, quantity: 0 },
-          { face: 500, quotation: 0.0057, quantity: 0 },
-          { face: 1000, quotation: 0.0057, quantity: 12 },
-        ],
-      },
-    });
   }
 }
