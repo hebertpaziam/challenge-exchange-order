@@ -2,8 +2,11 @@ import { CurrencyPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialog } from '@angular/material/dialog';
 import { Router, RouterModule } from '@angular/router';
+import { tap } from 'rxjs';
 
+import { MessageDialogComponent } from '@app/components/message-dialog/message-dialog.component';
 import { TableComponent } from '@app/components/table/table.component';
 import { ExchangeService } from '@app/services/exchange/exchange.service';
 
@@ -17,6 +20,7 @@ import { ExchangeService } from '@app/services/exchange/exchange.service';
 export class ReviewComponent {
   private readonly router = inject(Router);
   private readonly exchangeService = inject(ExchangeService);
+  private readonly dialog = inject(MatDialog);
 
   order = computed(() => this.exchangeService.order());
 
@@ -37,8 +41,16 @@ export class ReviewComponent {
   orderAmount = computed(() => this.orderItems().reduce((total: number, item: any) => item.totalBRL + total, 0));
 
   submitOrder() {
-    this.router.navigate(['/home']).then(() => {
-      alert('Pedido Finalizado!');
+    const dialogRef = this.dialog.open(MessageDialogComponent, {
+      data: {
+        title: `Pedido Realizado, ${this.order()!.name}!`,
+        text: `Em breve receberá um e-mail com o resumo do seu pedido.`,
+      },
     });
+
+    dialogRef
+      .afterClosed()
+      .pipe(tap(() => this.router.navigate(['/home'])))
+      .subscribe();
   }
 }
